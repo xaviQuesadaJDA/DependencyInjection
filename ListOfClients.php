@@ -1,6 +1,7 @@
 <?php
         require_once('Client.php');
-        $visor = new VisorClientCsv();
+
+        $visor = VisorClientFactory::createVisor("csv");
         $client = new Client($visor);
         $client->setNom("Xavi");
         $client->setCognoms("Quesada");

@@ -2,6 +2,8 @@
 require_once('iVisorClient.php');
 require_once('VisorClientHtml.php');
 require_once('VisorClientCsv.php');
+require_once('VisorClientFactory.php');
+
 class Client{
     private $dni;
     private $nom;
