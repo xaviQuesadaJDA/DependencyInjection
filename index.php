@@ -30,7 +30,7 @@
     <div id="clients_container">
     <?php
         require_once('Client.php');
-        $visor = new VisorClientHtml();
+        $visor = VisorClientFactory::createVisor("html");
         $client = new Client($visor);
         $client->setNom("Xavi");
         $client->setCognoms("Quesada");
